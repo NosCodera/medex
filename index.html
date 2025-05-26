@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>MedEx Companion</title>
+  <link rel="stylesheet" href="assets/css/style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+</head>
+<body>
+
+  <div class="top-bar">
+    <div class="top-left">
+      <span><i class="fas fa-envelope"></i> info@medex.com</span>
+      <span><i class="fas fa-phone"></i> +123456789</span>
+      <span><i class="fas fa-map-marker-alt"></i> Lucknow, India</span>
+    </div>
+    <div class="top-right">
+      <span><i class="fab fa-facebook-f"></i></span>
+      <span><i class="fab fa-twitter"></i></span>
+      <span><i class="fab fa-instagram"></i></span>
+    </div>
+  </div>
+
+  <nav class="navbar">
+    <div class="logo">
+      <img src="assets/icons/logo.png" alt="MedEx Logo" />
+      <span>MedEx Companion</span>
+    </div>
+    <ul class="nav-links">
+      <li><a href="index.html" class="active">Home</a></li>
+      <li><a href="about.html">About Us</a></li>
+      <li><a href="assistant.html">AI Assistant</a></li>
+      <li><a href="reports.html">Reports</a></li>
+      <li><a href="contact.html">Contact Us</a></li>
+    </ul>
+  </nav>
+
+  <div class="background-animation">
+    <img src="assets/images/background.gif" alt="Background Animation">
+  </div>
+
+  <section class="main-content">
+    <h1>Welcome to MedEx Web Companion</h1>
+    <p>Monitor real-time vitals, get emergency support, and explore advanced features of your medical exosuit.</p>
+  </section>
+
+  <section class="dashboard-section">
+    <div class="vitals-container">
+      <div class="vital-card" id="heartRate">❤️ Heart Rate: -- bpm</div>
+      <div class="vital-card" id="spo2">🩸 SPO2: -- %</div>
+      <div class="vital-card" id="stress">😓 Stress Level: -- %</div>
+      <div class="vital-card" id="steps">👣 Steps Count: --</div>
+      <div class="vital-card" id="calories">🔥 Calories Burnt: -- kcal</div>
+      <div class="vital-card" id="temp">🌡️ Temperature: -- °C</div>
+      <div class="vital-card" id="ecg">📈 Live ECG: Normal</div>
+    </div>
+    <button class="simulate-btn" onclick="simulateVitals()">Simulate Vitals</button>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 MedEx Companion. All rights reserved.</p>
+  </footer>
+
+  <script src="assets/js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>AI Assistant - MedEx Companion</title>
+  <link rel="stylesheet" href="assets/css/style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+</head>
+<body>
+  <div class="top-bar">
+    <div class="top-left">
+      <span><i class="fas fa-envelope"></i> info@medex.com</span>
+      <span><i class="fas fa-phone"></i> +123456789</span>
+      <span><i class="fas fa-map-marker-alt"></i> Lucknow, India</span>
+    </div>
+    <div class="top-right">
+      <span><i class="fab fa-facebook-f"></i></span>
+      <span><i class="fab fa-twitter"></i></span>
+      <span><i class="fab fa-instagram"></i></span>
+    </div>
+  </div>
+
+  <nav class="navbar">
+    <div class="logo">
+      <img src="assets/icons/logo.png" alt="MedEx Logo" />
+      <span>MedEx Companion</span>
+    </div>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About Us</a></li>
+      <li><a href="assistant.html" class="active">AI Assistant</a></li>
+      <li><a href="reports.html">Reports</a></li>
+      <li><a href="contact.html">Contact Us</a></li>
+    </ul>
+  </nav>
+
+  <section class="assistant-section">
+    <h1>MedEX AI</h1>
+    <p class="ai-description">Meet MedEX AI, your voice-enabled healthcare assistant ready to guide, inform, and assist using smart text or voice commands anytime, anywhere.</p>
+    <p class="ai-prompt">You can ask MedEX using your voice or by typing below:</p>
+
+    <div class="ai-box">
+      <input type="text" id="userInput" placeholder="Ask anything to MedEX AI" />
+      <button id="askButton">Ask MedEX</button>
+      <button id="speakButton">Talk to MedEX AI</button>
+    </div>
+
+    <div id="voiceAnimation"></div>
+    <div id="assistantOutput" class="ai-response"></div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 MedEx Companion. All rights reserved.</p>
+  </footer>
+
+  <script src="assets/js/assistant.js"></script>
+</body>
+</html>

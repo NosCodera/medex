@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Reports - MedEx Companion</title>
+  <link rel="stylesheet" href="assets/css/style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+</head>
+<body>
+  <div class="top-bar">
+    <div class="top-left">
+      <span><i class="fas fa-envelope"></i> info@medex.com</span>
+      <span><i class="fas fa-phone"></i> +123456789</span>
+      <span><i class="fas fa-map-marker-alt"></i> Lucknow, India</span>
+    </div>
+    <div class="top-right">
+      <span><i class="fab fa-facebook-f"></i></span>
+      <span><i class="fab fa-twitter"></i></span>
+      <span><i class="fab fa-instagram"></i></span>
+    </div>
+  </div>
+
+  <nav class="navbar">
+    <div class="logo">
+      <img src="assets/icons/logo.png" alt="MedEx Logo" />
+      <span>MedEx Companion</span>
+    </div>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About Us</a></li>
+      <li><a href="assistant.html">AI Assistant</a></li>
+      <li><a href="reports.html" class="active">Reports</a></li>
+      <li><a href="contact.html">Contact Us</a></li>
+    </ul>
+  </nav>
+
+  <section class="report-section">
+    <h1>Medical Reports</h1>
+    <p>Select date range and generate daily reports</p>
+
+    <div class="date-selectors">
+      <input type="date" id="fromDate" />
+      <input type="date" id="toDate" />
+    </div>
+
+    <button class="simulate-btn" onclick="generateReport()">Generate Report</button>
+
+    <div id="reportTableContainer"></div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 MedEx Companion. All rights reserved.</p>
+  </footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+  <script src="assets/js/reports.js"></script>
+</body>
+</html>
